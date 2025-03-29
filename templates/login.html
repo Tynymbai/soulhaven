@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoulHaven - Вход</title>
+    <link rel="stylesheet" href="../assets/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-large">soulhaven</div>
+        </div>
+        <div class="right-panel">
+            
+            <div class="login-container">
+                <h1>Вход</h1>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login">Логин</label>
+                        <input type="text" id="login" name="login">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="remember-me">
+                        <div>
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember" style="display: inline;">Запомнить меня</label>
+                        </div>
+                        <a href="#">Забыли пароль?</a>
+                    </div>
+                    <button type="submit" class="login-button">Войти</button>
+                    <a href="#" class="google-login">
+                        <img src="../img/google.png" alt="Google Logo">
+                        Войти через Google
+                    </a>
+                    <div class="register">
+                        <span>Новый пользователь?</span>
+                        <a href="#">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const login = document.getElementById('login').value;
+            const password = document.getElementById('password').value;
+            
+            if (!login || !password) {
+                alert('Пожалуйста, заполните все поля');
+                return;
+            }
+            
+            // В реальном приложении здесь был бы код для отправки данных на сервер
+            console.log('Попытка входа:', { login, password });
+            alert('Форма отправлена успешно');
+        });
+    </script>
+</body>
+</html>

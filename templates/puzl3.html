@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soulhaven - Челлендж завершен</title>
+    <link href="https://fonts.googleapis.com/css2?family=Grolped&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/puzl3.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo">Soulhaven</div>
+            <nav>
+                <a href="#">Мини-игры</a>
+                <a href="#">Курсы</a>
+                <a href="#">Консультации</a>
+                <a href="#">Челленджи</a>
+                <a href="#">Профиль</a>
+            </nav>
+            <a href="#" class="button">Вход/Регистрация</a>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="text-content">
+            <h1 class="title">Вы успешно завершили челлендж и заработали <span style="color: #FFD700;">+50 звезд!</span></h1>
+            <p class="description">Вы потренировали концентрацию и расслабились, собирая пазлы. Иногда простой отдых — лучший способ перезагрузить разум.</p>
+            <p class="description">Готовы к следующему челленджу?</p>
+            <button class="cta-button">Завершить челлендж</button>
+        </div>
+        <div class="image-content">
+            <img src="../img/star.png" alt="Медаль с звездами">
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            alert('Переход к следующему челленджу');
+        });
+    </script>
+</body>
+</html>

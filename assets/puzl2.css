@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.auth-buttons button {
+    color: #4a90e2;
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+}
+
+.puzzle-selection {
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.puzzle-selection h1 {
+    color: #4a90e2;
+    font-weight: 600;
+}
+
+.puzzle-selection p {
+    color: #858585;
+}
+
+.puzzle-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.puzzle-card {
+    background-color: white; /* Changed to white */
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #D9D9D9; /* Gray border */
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+}
+
+.puzzle-card.selected {
+    border-color: #4caf50; /* Green border when selected, matching play button */
+}
+
+.puzzle-card h3 {
+    color: #858585;
+}
+
+.puzzle-card img {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+.puzzle-card:hover {
+    transform: scale(1.05);
+}
+
+.play-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 15px 80px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.play-button:hover {
+    background-color: #45a049;
+}

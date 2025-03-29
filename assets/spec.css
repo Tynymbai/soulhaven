@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 0;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3498DB;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #34495e;
+}
+
+.login-btn {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.profile-container {
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-left {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.profile-photo img {
+    width: 250px;
+    height: 320px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
+
+.profile-left h2 {
+    color: #3498DB;
+    margin: 10px 0;
+}
+
+.profile-left p {
+    color: #3498DB;
+}
+
+.profile-center {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.profile-right {
+    width: 30%;
+    padding: 20px;
+    background-color: white;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    color: #3498DB;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.section p, .section li {
+    color: #34495E;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.certificate img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.back-btn {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .profile-left, .profile-center, .profile-right {
+        width: 100%;
+        border: none;
+    }
+}

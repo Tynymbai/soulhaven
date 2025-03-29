@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.star {
+    position: absolute;
+    color: #e8f4fc;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    padding: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-left {
+    flex: 0 0 60%;
+}
+
+.content-right {
+    flex: 0 0 40%;
+    text-align: right;
+}
+
+.content-right img {
+    max-width: 90%;
+    height: auto;
+}
+
+h1 {
+    color: #339CCC;
+    font-size: 42px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.congrats {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.continue {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.continue span {
+    font-weight: bold;
+}
+
+.finish-btn {
+    display: inline-block;
+    background-color: #339CCC;
+    color: white;
+    padding: 16px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.finish-btn:hover {
+    background-color: #2a87b5;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+    
+    .content-left, .content-right {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+    
+    .content-right {
+        margin-top: 40px;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+}

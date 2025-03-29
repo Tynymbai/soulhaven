@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #2098c5;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-menu a:hover {
+    color: #2098c5;
+}
+
+.login-btn {
+    background-color: #2098c5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Courses Section */
+.courses-section {
+    padding: 50px 0;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 48px;
+    color: #2098c5;
+    font-weight: 600;
+}
+
+.view-all-btn {
+    border: 2px solid #2098c5;
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #2098c5;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.course-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.course-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.course-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-title {
+    font-size: 24px;
+    color: #2098c5;
+    margin-bottom: 10px;
+}
+
+.course-description {
+    font-size: 16px;
+    color: #2098c5;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    background-color: #2098c5;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .course-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+}

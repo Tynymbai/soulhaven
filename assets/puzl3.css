@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+}
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+    color: #339CCC;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Grolped', sans-serif;
+}
+.navbar-content nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+.navbar-content a.button {
+    background-color: #339CCC;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-content {
+    flex: 1;
+    padding-right: 50px;
+}
+.image-content {
+    flex: 0 0 400px;
+}
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+.title {
+    color: #339CCC;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.description {
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.cta-button {
+    background-color: #339CCC;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #2a7c9f;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Восстановление пароля</title>
+    <link rel="stylesheet" href="../assets/reset.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <div class="key-icon">🔑</div>
+        </div>
+        
+        <h1>Забыли пароль?</h1>
+        <p>Не волнуйтесь, мы восстановим ваш пароль!</p>
+        
+        <div class="input-container">
+            <input type="email" id="email" placeholder="E-mail?">
+            <div class="input-hint">Укажите свою почту</div>
+        </div>
+        
+        <button id="resetBtn">Сбросить пароль</button>
+        
+        <a href="#" class="back-link">
+            <span class="back-icon">⟲</span> Вернуться ко входу
+        </a>
+    </div>
+
+    <script>
+        document.getElementById('resetBtn').addEventListener('click', function() {
+            const email = document.getElementById('email').value;
+            
+            if (!email) {
+                alert('Пожалуйста, введите адрес электронной почты');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Пожалуйста, введите корректный адрес электронной почты');
+                return;
+            }
+            
+            alert('Инструкции по сбросу пароля отправлены на ' + email);
+            document.getElementById('email').value = '';
+        });
+    </script>
+</body>
+</html>

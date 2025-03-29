@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Собери пазлы - Остров спокойствия</title>
+    <link rel="stylesheet" href="../assets/p-game.css">
+</head>
+<body>
+    <h1>Собери пазлы</h1>
+    <h2>Остров спокойствия</h2>
+    
+    <div class="image-upload">
+        <label for="image-input" class="image-upload-label">Выберите своё изображение</label>
+        <input type="file" id="image-input" accept="image/*" style="display: none;">
+        <img id="image-preview" class="image-preview" alt="Предпросмотр">
+    </div>
+    
+    <div class="puzzle-container">
+        <img id="full-image" class="puzzle-image">
+        <div class="completed-message">Отлично! Пазл собран!</div>
+    </div>
+    
+    <div class="controls">
+        <button class="button" id="start-button">НАЧАТЬ ИГРУ</button>
+        <button class="button" id="shuffle-button" style="display: none;">ПЕРЕМЕШАТЬ</button>
+        <button class="button" id="complete-button" style="display: none;">ЗАВЕРШИТЬ</button>
+    </div>
+    <script src="../assets/p-game.js"></script>
+</body>
+</html>
